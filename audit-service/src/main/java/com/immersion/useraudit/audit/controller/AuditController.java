@@ -24,6 +24,7 @@ public class AuditController {
     @PostMapping("/auditDetails")
     public AuditEntity saveAudit(@RequestBody AuditEntity auditEntity) {
         log.info("PostMapping: save details");
+        System.out.println(" ");
 
        /* if(auditEntity.getProcessedTime() instanceof String) {
             //auditEntity.setProcessedTime(LocalDateTime.parse(auditEntity.getProcessedTime()));
